@@ -680,7 +680,7 @@ vfs_parse_ls_lga (const char *p, struct stat * s, char **filename, char **linkna
 {
     int idx, idx2, num_cols;
     int i;
-    char *p_copy;
+    char *p_copy = NULL;
     char *t = NULL;
     const char *line = p;
     size_t skipped;
